@@ -23,7 +23,10 @@ jobs:
       # env:
          # IMAGE_TAG: ${{ github.sha }} 
       run: |
-        docker build ./ -t ${{ secrets.DOCKERHUB_USERNAME }}/myspringbootapp:latest .
-        docker push ${{ secrets.DOCKERHUB_USERNAME }}/myspringbootapp:latest
+        docker build ./ -t hub.docker.com/shivam0007/myspringbootapp:latest .
+        # docker push $hub.docker.com/shivam0007/myspringbootapp:latest
+        # docker build ./ -t ${{ secrets.DOCKERHUB_USERNAME }}/myspringbootapp:latest .
+        # docker push ${{ secrets.DOCKERHUB_USERNAME }}/myspringbootapp:latest
+        
         
 
